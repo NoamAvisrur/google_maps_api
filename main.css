@@ -1,0 +1,215 @@
+body {
+     background-color: #eee;
+}
+header {
+    width: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav,
+.search_routes,
+.add_markers {
+    display: flex;
+    align-items: center;
+}
+header img {
+    width: 40px;
+}
+h1 {
+    margin: 0px;
+    padding: 1rem 1rem 1rem 0rem;
+    color: #fff;
+    font-size: 1rem;
+    font-family: arial;
+}
+header span {
+    color: #fff;
+    font: 13.3333px Arial;
+    margin-left: 1rem;
+}
+nav button {
+    border: none;
+    background-color: transparent;
+    color: #ddd;
+}
+nav button:hover {
+    cursor: pointer;
+    color: #333;
+    background-color: #ddd;
+}
+input[list="citys"],
+select {
+    border-radius: 2px;
+}
+select {
+    padding: 1px 0px;
+}
+input::-webkit-calendar-picker-indicator {
+    display: none;
+}
+input[type="submit"] {
+    margin: 0rem 1rem 0rem 1rem;
+    border-radius: 2px;
+}
+#map {
+    width: 100%;
+    height: 650px;
+    border-bottom: 1px solid #333;
+}
+#right-panel {
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+    height: 500px;
+    width: 350px;
+    overflow: auto;
+    position: absolute;
+    right: 8px;
+    z-index: 5;
+    background-color: #fff;
+    border: 1px solid #999;
+    display: none;
+}
+#right-panel select, #right-panel input {
+   font-size: 15px;
+}
+#right-panel select {
+   width: 100%;
+}
+#right-panel i {
+   font-size: 12px;
+}   
+footer {
+}
+footer img {
+    width: 200px;
+    margin: 0 auto;
+}
+.show {
+    display: flex;
+}
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 461px){
+header{
+    display:block;    
+}
+.search_routes, .add_markers {
+    background-color: #aaa;
+    padding: 5px;
+}
+select {
+    width: 80px;
+}
+form {
+    width: 450px;
+}
+.add_markers input[type="submit"] {
+    margin: 0px;
+}
+#Routes {
+    margin-right: 5px;
+}
+.search_routes input[type="submit"] {
+    margin-left: 0px;
+    margin-top: 10px;
+}
+.search_routes input[list="citys"] {
+    display: block;
+}
+header span {
+    margin-left: 0px;
+}
+#map {
+    width: 100%;
+    height: 450px;
+}
+#right-panel {
+    padding-left: 10px;
+    height: 300px;
+    width: 100%;
+    overflow: auto;
+    position: absolute;
+    top: 580px;
+    right: 0px;
+    z-index: 5;
+    background-color: #fff;
+    border: 1px solid #999;
+    text-align: center;
+    display: none;
+}}
+
+@media screen and (min-width: 461px) and (max-width: 741px){
+header{
+    display:block;    
+}
+.search_routes, .add_markers {
+    background-color: #aaa;
+    padding: 5px;
+}
+select {
+    margin-top: 10px;
+}
+form {
+    width: 440px;
+}
+header span {
+    margin-left: 0px;
+}
+#map {
+    width: 100%;
+    height: 450px;
+}
+#right-panel {
+    padding-left: 10px;
+    height: 300px;
+    width: 100%;
+    overflow: auto;
+    position: absolute;
+    top: 550px;
+    right: 0px;
+    z-index: 5;
+    background-color: #fff;
+    border: 1px solid #999;
+    text-align: center;
+    display: none;
+}}
+
+@media screen and (min-width: 741px) and (max-width: 1100px){
+header{
+    display:block;    
+}
+.search_routes, .add_markers {
+    background-color: #aaa;
+    padding: 5px;
+}
+form {
+ margin: 0 auto;
+}
+#map {
+    width: 100%;
+    height: 500px;
+}
+#right-panel {
+    padding-left: 10px;
+    height: 300px;
+    width: 100%;
+    overflow: auto;
+    position: absolute;
+    top: 500px;
+    right: 0px;
+    z-index: 5;
+    background-color: #fff;
+    border: 1px solid #999;
+    text-align: center;
+    display: none;
+}}
+
+@media screen and (min-width: 1101px){
+header{
+    width: 100%;
+}}

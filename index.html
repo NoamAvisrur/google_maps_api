@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Maps API</title>
+    <link rel="icon" href="https://www.google.com/images/branding/product/2x/maps_96in128dp.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="https://www.google.com/images/branding/product/2x/maps_96in128dp.png" alt="logo"/>
+            <h1>Google Maps API</h1>
+            <button id='Location'>Location</button>
+            <button id='Markers'>Markers</button>
+            <button id='Routes'>Routes</button>
+        </nav>
+        <div class="search_routes hide">
+            <form>
+                <span>Start:</span>
+                <input list="citys" id="start" value="My Location">
+                <datalist id="citys">
+                    <option value="Tel Aviv-Yafo">
+                    <option value="Rishon LeTsiyon">Rishon LeTsiyon</option>
+                    <option value="Heifa">heifa</option>
+                    <option value="Afula">Afula</option>
+                    <option value="Metula">Metula</option>
+                    <option value="Kiryat Shmona">Kiryat Shmona</option>
+                    <option value="Jerusalem">Jerusalem</option>
+                    <option value="Eilat">Eilat</option>
+                    <option value="Sderot">Sderot</option>
+                    <option value="Kiryat Gat">Kiryat Gat</option>
+                    <option value="Beer Sheva">Beer Sheva</option>
+                </datalist>
+                <span>End:</span>
+                <input list="citys" id="end">
+                <datalist id="citys">
+                    <option value="Tel Aviv-Yafo">
+                    <option value="Rishon LeTsiyon">Rishon LeTsiyon</option>
+                    <option value="Heifa">heifa</option>
+                    <option value="Afula">Afula</option>
+                    <option value="Metula">Metula</option>
+                    <option value="Kiryat Shmona">Kiryat Shmona</option>
+                    <option value="Jerusalem">Jerusalem</option>
+                    <option value="Eilat">Eilat</option>
+                    <option value="Sderot">Sderot</option>
+                    <option value="Kiryat Gat">Kiryat Gat</option>
+                    <option value="Beer Sheva">Beer Sheva</option>
+                </datalist>
+                <span>Travel mode:</span>
+                <select id="mode">
+                    <option value="DRIVING">Driving</option>
+                    <option value="WALKING">Walking</option>
+                    <option value="BICYCLING">Bicycling</option>
+                    <option value="TRANSIT">Transit</option>
+                </select>
+                <input type="submit" value="Search">
+            </form>
+        </div>  
+        <div class="add_markers hide">
+            <form id="marker">
+                <span>Set a Marker:</span>
+                <input list="citys" id="address">
+                <datalist id="citys">
+                    <option value="Tel Aviv-Yafo">
+                    <option value="Rishon LeTsiyon">Rishon LeTsiyon</option>
+                    <option value="heifa">heifa</option>
+                    <option value="Afula">Afula</option>
+                    <option value="Metula">Metula</option>
+                    <option value="Kiryat Shmona">Kiryat Shmona</option>
+                    <option value="Jerusalem">Jerusalem</option>
+                    <option value="Eilat">Eilat</option>
+                    <option value="sderot">sderot</option>
+                    <option value="Kiryat Gat">Kiryat Gat</option>
+                    <option value="Beer Sheva">Beer Sheva</option>
+                </datalist>
+                <input type="submit" value="Set">
+            </form>
+        </div>  
+    </header>
+    <div id="right-panel"></div>
+    <div id="map"></div>
+    <footer><img src="http://www.gdgmumbai.org/wp-content/uploads/2015/04/developers.png" alt="google-dev-logo/>"</footer>
+    <script src="newjavascript.js" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuuM7QcvPyyap8On5Xinw-sIM49s7ojS0&callback=initMap" async defer></script>
+</body>
+
+</html>
